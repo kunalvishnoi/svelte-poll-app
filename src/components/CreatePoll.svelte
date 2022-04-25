@@ -11,13 +11,13 @@ const dispatch = createEventDispatcher()
 const handleSubmit = () => {
    
     valid = true;
-    if(data?.question?.trim().length < 5){
+    if(data.question.trim().length < 5){
         valid = false;
         error.question = 'Atleast 5 characters required!';
     } else {
         error.question = '';
     }
-    if(data?.answerA?.trim().length < 1){
+    if(data.answerA.trim().length < 1){
         valid = false;
         error.answerA = 'AnswerA should not be empty!';
     }
@@ -25,7 +25,7 @@ const handleSubmit = () => {
         error.answerA = '';
     }
 
-    if(data?.answerB?.trim().length < 1){
+    if(data.answerB.trim().length < 1){
         valid = false;
         error.answerB = 'AnswerB should not be empty!';
     }

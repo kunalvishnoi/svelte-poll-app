@@ -1418,39 +1418,39 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(label0, "for", "question");
     			attr_dev(label0, "class", "svelte-1u73xhc");
-    			add_location(label0, file$5, 47, 8, 1212);
+    			add_location(label0, file$5, 47, 8, 1206);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "id", "question");
     			attr_dev(input0, "class", "svelte-1u73xhc");
-    			add_location(input0, file$5, 48, 8, 1259);
+    			add_location(input0, file$5, 48, 8, 1253);
     			attr_dev(div0, "class", "error svelte-1u73xhc");
-    			add_location(div0, file$5, 49, 8, 1330);
+    			add_location(div0, file$5, 49, 8, 1324);
     			attr_dev(div1, "class", "field-data svelte-1u73xhc");
-    			add_location(div1, file$5, 46, 4, 1179);
+    			add_location(div1, file$5, 46, 4, 1173);
     			attr_dev(label1, "for", "answerA");
     			attr_dev(label1, "class", "svelte-1u73xhc");
-    			add_location(label1, file$5, 52, 8, 1420);
+    			add_location(label1, file$5, 52, 8, 1414);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "id", "answerA");
     			attr_dev(input1, "class", "svelte-1u73xhc");
-    			add_location(input1, file$5, 53, 8, 1466);
+    			add_location(input1, file$5, 53, 8, 1460);
     			attr_dev(div2, "class", "error svelte-1u73xhc");
-    			add_location(div2, file$5, 54, 8, 1535);
+    			add_location(div2, file$5, 54, 8, 1529);
     			attr_dev(div3, "class", "field-data svelte-1u73xhc");
-    			add_location(div3, file$5, 51, 4, 1387);
+    			add_location(div3, file$5, 51, 4, 1381);
     			attr_dev(label2, "for", "answerB");
     			attr_dev(label2, "class", "svelte-1u73xhc");
-    			add_location(label2, file$5, 58, 8, 1625);
+    			add_location(label2, file$5, 58, 8, 1619);
     			attr_dev(input2, "type", "text");
     			attr_dev(input2, "id", "answerB");
     			attr_dev(input2, "class", "svelte-1u73xhc");
-    			add_location(input2, file$5, 59, 8, 1671);
+    			add_location(input2, file$5, 59, 8, 1665);
     			attr_dev(div4, "class", "error svelte-1u73xhc");
-    			add_location(div4, file$5, 60, 8, 1740);
+    			add_location(div4, file$5, 60, 8, 1734);
     			attr_dev(div5, "class", "field-data svelte-1u73xhc");
-    			add_location(div5, file$5, 57, 4, 1592);
+    			add_location(div5, file$5, 57, 4, 1586);
     			attr_dev(form, "class", "svelte-1u73xhc");
-    			add_location(form, file$5, 45, 0, 1128);
+    			add_location(form, file$5, 45, 0, 1122);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1563,21 +1563,21 @@ var app = (function () {
     	const handleSubmit = () => {
     		valid = true;
 
-    		if (data?.question?.trim().length < 5) {
+    		if (data.question.trim().length < 5) {
     			valid = false;
     			$$invalidate(1, error.question = 'Atleast 5 characters required!', error);
     		} else {
     			$$invalidate(1, error.question = '', error);
     		}
 
-    		if (data?.answerA?.trim().length < 1) {
+    		if (data.answerA.trim().length < 1) {
     			valid = false;
     			$$invalidate(1, error.answerA = 'AnswerA should not be empty!', error);
     		} else {
     			$$invalidate(1, error.answerA = '', error);
     		}
 
-    		if (data?.answerB?.trim().length < 1) {
+    		if (data.answerB.trim().length < 1) {
     			valid = false;
     			$$invalidate(1, error.answerB = 'AnswerB should not be empty!', error);
     		} else {
