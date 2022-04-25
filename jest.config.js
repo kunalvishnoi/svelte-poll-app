@@ -1,6 +1,5 @@
 module.exports = {
-    preset: "jest-puppeteer",
-    globals: { URL: "http://localhost:8080" },
+    
     testMatch: [
         "**/test/**/*.test.js"
       ],
@@ -19,5 +18,6 @@ module.exports = {
 //     '^.+\\.js$': 'babel-jest',
 //   },
 //   moduleFileExtensions: ['js', 'svelte'],
-  
+// preset: "jest-puppeteer",
+// globals: { URL: "http://localhost:8080" },
 // }
